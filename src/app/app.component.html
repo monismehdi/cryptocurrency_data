@@ -1,0 +1,43 @@
+<h1 style="color:blue;text-align:center;">
+  {{title}}
+</h1>
+
+
+<table class="table table-dark">
+  <thead>          
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Symbol</th>
+      <th scope="col">Rank</th>
+      <th scope="col">Price_USD</th>
+      <th scope="col">Price_BTC</th>
+      <th scope="col">Supply Available</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let cVal of cValue let i = index">
+    <tr>
+      <th scope="row">{{i+1}}</th>
+      <td>{{cVal.id}}</td>
+      <td>{{cVal.name}}</td>
+      <td>{{cVal.symbol}}</td>
+      <td>{{cVal.rank}} </td>
+      <td>{{cVal.price_usd}}</td>
+      <td>{{cVal.price_btc}}</td>
+      <td>{{cVal.available_supply}}</td>
+    </tr>
+    <!-- <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr> -->
+  </tbody>
+</table>
